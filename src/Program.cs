@@ -152,8 +152,19 @@ builder.Services.AddSwaggerGen();
 //     );
 // });
 
-var app = builder.Build();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 
+var app = builder.Build();
+app.UseCors();
 // app.UseCors(MyAllowSpecificOrigins);
 app.UseMiddleware<LoggingMiddleware>();
 app.UseMiddleware<ErrorHandlerMiddleware>();
