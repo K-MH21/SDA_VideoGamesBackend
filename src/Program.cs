@@ -6,7 +6,18 @@ AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 //connect the database
 builder.Services.AddDbContext<DatabaseContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("local"));
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("local"),
+        npgsqlOptions =>
+        {
+            npgsqlOptions.CommandTimeout(120);
+            npgsqlOptions.EnableRetryOnFailure(
+                maxRetryCount: 5,
+                maxRetryDelay: TimeSpan.FromSeconds(10),
+                errorCodesToAdd: null
+            );
+        }
+    );
 });
 
 builder.Services.AddAutoMapper(typeof(MapperProfile).Assembly);
