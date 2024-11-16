@@ -28,6 +28,7 @@ namespace FusionTech.src.Controllers
 
         // Get all video games
         [HttpGet("Detailed")]
+
         public async Task<ActionResult<VideoGamesInfoWithVersionListDto>> GetVideoGamesWithVersion(
             [FromQuery] SearchParameters searchParameters
         )

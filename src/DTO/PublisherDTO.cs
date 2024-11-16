@@ -9,7 +9,7 @@ namespace FusionTech.src.DTO
             public string? PublisherName { get; set; }
 
             [EmailAddress(ErrorMessage = "Invalid email format.")]
-            public string? Email { get; set; }
+            public string? PublisherEmail { get; set; }
             public string? PublisherPicturePath { get; set; }
         }
 
@@ -17,7 +17,7 @@ namespace FusionTech.src.DTO
         {
             public Guid PublisherId { get; set; }
             public string? PublisherName { get; set; }
-            public string? Email { get; set; }
+            public string? PublisherEmail { get; set; }
             public string? PublisherPicturePath { get; set; }
         }
 
@@ -27,7 +27,7 @@ namespace FusionTech.src.DTO
             public string? PublisherName { get; set; }
 
             [EmailAddress(ErrorMessage = "Invalid email format.")]
-            public string? Email { get; set; }
+            public string? PublisherEmail { get; set; }
             public string? PublisherPicturePath { get; set; }
         }
     }

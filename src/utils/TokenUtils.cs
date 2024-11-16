@@ -32,7 +32,7 @@ namespace FusionTech.src.Utils
             {
                 Issuer = issuer,
                 Audience = audience,
-                Expires = DateTime.Now.AddMinutes(10),
+                Expires = DateTime.Now.AddMinutes(120),
                 Subject = new ClaimsIdentity(claims),
                 SigningCredentials = signingCredentials,
             };

@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.Extensions.FileProviders;
+
 var options = new WebApplicationOptions { WebRootPath = "wwwroot" };
 
 var builder = WebApplication.CreateBuilder(options);
@@ -6,18 +9,7 @@ AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 //connect the database
 builder.Services.AddDbContext<DatabaseContext>(options =>
 {
-    options.UseNpgsql(
-        builder.Configuration.GetConnectionString("local"),
-        npgsqlOptions =>
-        {
-            npgsqlOptions.CommandTimeout(120);
-            npgsqlOptions.EnableRetryOnFailure(
-                maxRetryCount: 5,
-                maxRetryDelay: TimeSpan.FromSeconds(10),
-                errorCodesToAdd: null
-            );
-        }
-    );
+    options.UseNpgsql(builder.Configuration.GetConnectionString("local"));
 });
 
 builder.Services.AddAutoMapper(typeof(MapperProfile).Assembly);
@@ -132,64 +124,50 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// // Cors
-// var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-// builder.Services.AddCors(options =>
-// {
-//     options.AddPolicy(
-//         name: MyAllowSpecificOrigins,
-//         policy =>
-//         {
-//             policy
-//                 .WithOrigins(
-//                     "http://localhost:3000",
-//                     "https://k-mh21-frontend.onrender.com"
-//                 )
-//                 .AllowAnyHeader()
-//                 .AllowAnyMethod()
-//                 .AllowCredentials();
-//         }
-//     );
-// });
-
+// Cors
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policy =>
-    {
-        policy
-            .AllowAnyOrigin()
-            .AllowAnyHeader()
-            .AllowAnyMethod();
-    });
+    options.AddPolicy(
+        name: MyAllowSpecificOrigins,
+        policy =>
+        {
+            policy
+                .WithOrigins(
+                    "http://localhost:3000",
+                    "https://gamesland.onrender.com", // Taghreed
+                    "https://video-game-store-fe.onrender.com", // Razan
+                    "https://vgstore.onrender.com", // Samar
+                    "https://uplevel-z9qs.onrender.com/", // Lujain
+                    "https://k-mh21-frontend.onrender.com/" // Mohmmad
+                )
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .SetIsOriginAllowed((host) => true)
+                .AllowCredentials();
+        }
+    );
 });
 
 var app = builder.Build();
-app.UseCors();
-// app.UseCors(MyAllowSpecificOrigins);
+
 app.UseMiddleware<LoggingMiddleware>();
 app.UseMiddleware<ErrorHandlerMiddleware>();
 app.UseStaticFiles();
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseRouting();
-app.MapGet(
-    "/",
-    async (DatabaseContext dbContext) =>
+app.MapGet("/", () => "server is running");
+
+app.UseStaticFiles(
+    new StaticFileOptions
     {
-        try
-        {
-            if (await dbContext.Database.CanConnectAsync())
-            {
-                return Results.Ok("Database connection successful.");
-            }
-            else
-            {
-                return Results.Problem("Unable to connect to the database.");
-            }
-        }
-        catch (Exception ex)
-        {
-            return Results.Problem($"Database error: {ex.Message}");
-        }
+        FileProvider = new PhysicalFileProvider(
+            Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "images")
+        ), // Correct path
+        RequestPath =
+            "/images" // URL prefix to access images
+        ,
     }
 );
 

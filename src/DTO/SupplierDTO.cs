@@ -9,7 +9,7 @@ namespace FusionTech.src.DTO
             public string? SupplierName { get; set; }
 
             [Phone(ErrorMessage = "Invalid contact number format.")]
-            public string? SupplierContact { get; set; }
+            public string? SupplierContactInfo { get; set; }
 
             [StringLength(200, ErrorMessage = "Supplier bank info cannot exceed 200 characters.")]
             public string? SupplierBankInfo { get; set; }
@@ -19,7 +19,7 @@ namespace FusionTech.src.DTO
         {
             public Guid SupplierId { get; set; }
             public string? SupplierName { get; set; }
-            public string? SupplierContact { get; set; }
+            public string? SupplierContactInfo { get; set; }
             public string? SupplierBankInfo { get; set; }
         }
 
@@ -29,7 +29,7 @@ namespace FusionTech.src.DTO
             public string? SupplierName { get; set; }
 
             [Phone(ErrorMessage = "Invalid contact number format.")]
-            public string? SupplierContact { get; set; }
+            public string? SupplierContactInfo { get; set; }
 
             [StringLength(200, ErrorMessage = "Supplier bank info cannot exceed 200 characters.")]
             public string? SupplierBankInfo { get; set; }

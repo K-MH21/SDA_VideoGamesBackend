@@ -14,6 +14,7 @@ WORKDIR /src
 # Copy the project file and restore dependencies
 COPY ["Backend.csproj", "./"]
 RUN dotnet restore "Backend.csproj"
+COPY wwwroot /app/wwwroot
 
 # Copy the rest of the application code
 COPY . .

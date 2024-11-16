@@ -155,7 +155,7 @@ namespace FusionTech.src.Database
                 GameStudioId = Guid.Parse(studioGuidHelper),
                 StudioName = "Deck Nine Games",
                 StudioPicturePath =
-                    $"http://localhost:5125/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
+                    $"https://fusiontech-0dxp.onrender.com/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
             };
 
             studioGuidHelper = "8720de28-1bf5-49ad-b272-ddfee747f22c";
@@ -164,7 +164,7 @@ namespace FusionTech.src.Database
                 GameStudioId = Guid.Parse(studioGuidHelper),
                 StudioName = "Telltale Games",
                 StudioPicturePath =
-                    $"http://localhost:5125/images/Studios/{studioGuidHelper}/{studioGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Studios/{studioGuidHelper}/{studioGuidHelper}.jpg",
             };
 
             studioGuidHelper = "0b4ad2e6-b78c-47a8-bf70-fb667cb7a138";
@@ -173,7 +173,7 @@ namespace FusionTech.src.Database
                 GameStudioId = Guid.Parse(studioGuidHelper),
                 StudioName = "Feral Interactive",
                 StudioPicturePath =
-                    $"http://localhost:5125/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
+                    $"https://fusiontech-0dxp.onrender.com/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
             };
 
             studioGuidHelper = "bbd8f143-d7e1-41ef-9702-9bfb27567b80";
@@ -182,7 +182,7 @@ namespace FusionTech.src.Database
                 GameStudioId = Guid.Parse(studioGuidHelper),
                 StudioName = "Codemaster",
                 StudioPicturePath =
-                    $"http://localhost:5125/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
+                    $"https://fusiontech-0dxp.onrender.com/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
             };
 
             studioGuidHelper = "86b47e62-089e-4f3e-b9c4-f29ea6720fd0";
@@ -191,7 +191,7 @@ namespace FusionTech.src.Database
                 GameStudioId = Guid.Parse(studioGuidHelper),
                 StudioName = "Crystal Dynamics",
                 StudioPicturePath =
-                    $"http://localhost:5125/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
+                    $"https://fusiontech-0dxp.onrender.com/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
             };
 
             studioGuidHelper = "bfe21050-cd59-4feb-ab5e-459031e4b3f3";
@@ -200,7 +200,7 @@ namespace FusionTech.src.Database
                 GameStudioId = Guid.Parse(studioGuidHelper),
                 StudioName = "Avalanche Studios",
                 StudioPicturePath =
-                    $"http://localhost:5125/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
+                    $"https://fusiontech-0dxp.onrender.com/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
             };
 
             studioGuidHelper = "5502bbf3-535e-4042-85b8-052b35594542";
@@ -209,7 +209,7 @@ namespace FusionTech.src.Database
                 GameStudioId = Guid.Parse(studioGuidHelper),
                 StudioName = "IO Interactive",
                 StudioPicturePath =
-                    $"http://localhost:5125/images/Studios/{studioGuidHelper}/{studioGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Studios/{studioGuidHelper}/{studioGuidHelper}.jpg",
             };
 
             studioGuidHelper = "cf04439e-6b5d-406f-b2e1-a5616a3aee8a";
@@ -218,7 +218,7 @@ namespace FusionTech.src.Database
                 GameStudioId = Guid.Parse(studioGuidHelper),
                 StudioName = "Skybound Entertainment",
                 StudioPicturePath =
-                    $"http://localhost:5125/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
+                    $"https://fusiontech-0dxp.onrender.com/images/Studios/{studioGuidHelper}/{studioGuidHelper}.png",
             };
 
             studioGuidHelper = "727cffb5-6ba3-4a56-a1eb-fe1962c8f044";
@@ -227,7 +227,7 @@ namespace FusionTech.src.Database
                 GameStudioId = Guid.Parse(studioGuidHelper),
                 StudioName = "Liquid Entertainment",
                 StudioPicturePath =
-                    $"http://localhost:5125/images/Studios/{studioGuidHelper}/{studioGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Studios/{studioGuidHelper}/{studioGuidHelper}.jpg",
             };
 
             studioGuidHelper = "9fc928ce-aa2a-4e7b-816d-b3468ea552ed";
@@ -236,7 +236,7 @@ namespace FusionTech.src.Database
                 GameStudioId = Guid.Parse(studioGuidHelper),
                 StudioName = "Blue Omega Entertainment",
                 StudioPicturePath =
-                    $"http://localhost:5125/images/Studios/{studioGuidHelper}/{studioGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Studios/{studioGuidHelper}/{studioGuidHelper}.jpg",
             };
 
             var publisherGuidHelper = "12ba59b8-6c30-4864-9d48-0f95bd278b40";
@@ -246,7 +246,7 @@ namespace FusionTech.src.Database
                 PublisherName = "Square Enix",
                 PublisherEmail = "creators@us.square-enix.com",
                 PublisherPicturePath =
-                    $"http://localhost:5125/images/Publishers/{publisherGuidHelper}/{publisherGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Publishers/{publisherGuidHelper}/{publisherGuidHelper}.jpg",
             };
             publisherGuidHelper = "f5ea9a66-8a49-4f1f-ae5d-09ce38a7c80d";
             var Publisher2 = new Publisher
@@ -255,7 +255,7 @@ namespace FusionTech.src.Database
                 PublisherName = "Telltale Games",
                 PublisherEmail = " support@telltalegames.com", // adventure and action
                 PublisherPicturePath =
-                    $"http://localhost:5125/images/Publishers/{publisherGuidHelper}/{publisherGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Publishers/{publisherGuidHelper}/{publisherGuidHelper}.jpg",
             };
             publisherGuidHelper = "df5d8791-98b3-445d-8120-07b33695da10";
             var Publisher3 = new Publisher
@@ -264,7 +264,7 @@ namespace FusionTech.src.Database
                 PublisherName = "Codemasters",
                 PublisherEmail = " help@codemasters.com", //race
                 PublisherPicturePath =
-                    $"http://localhost:5125/images/Publishers/{publisherGuidHelper}/{publisherGuidHelper}.png",
+                    $"https://fusiontech-0dxp.onrender.com/images/Publishers/{publisherGuidHelper}/{publisherGuidHelper}.png",
             };
 
             var videoGamesInfoGuidHelper = "7248c5a6-49e0-4f88-be50-8d87a54c938f";
@@ -278,7 +278,7 @@ namespace FusionTech.src.Database
                 TotalRating = 3,
                 PublisherId = Publisher1.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "ee4836d4-d131-47fe-b741-3c104f14df71";
@@ -292,7 +292,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher2.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "d6cd4ffd-62d1-41e6-b6b4-5a05babb8d45";
@@ -306,7 +306,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher1.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "c5618a1b-eef8-43ec-aa1b-25415fb5bc2f";
@@ -320,7 +320,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher3.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.png",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.png",
             };
 
             videoGamesInfoGuidHelper = "02b0bb70-4fc8-4c72-86a7-731f4332b9a5";
@@ -334,7 +334,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher3.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "96ae6e7a-5c53-4ded-bf98-6a791f1ebdd3";
@@ -348,7 +348,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher1.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "dce59101-3621-461e-bf10-61807163a946";
@@ -362,7 +362,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher1.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "007e6acf-7ff4-45d6-aa22-dfbf4c4d3b23";
@@ -376,9 +376,9 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher2.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
-
+            
             videoGamesInfoGuidHelper = "0ce33067-7091-4c51-a1c4-3a93751c748c";
             var VideoGameInfo9 = new VideoGameInfo
             {
@@ -390,7 +390,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher2.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "e439131b-d595-48e3-8873-be55a1357748";
@@ -404,7 +404,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher2.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "426a499a-41c1-4763-a615-fca426836e3f";
@@ -418,7 +418,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher2.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "e5a9c78f-863e-428d-81a5-3b2d4ce62494";
@@ -432,7 +432,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher3.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "4cdb49aa-17a7-4029-a50a-e01f5aa5fd3c";
@@ -447,7 +447,7 @@ namespace FusionTech.src.Database
                 PublisherId = Publisher3.PublisherId,
 
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "9215201e-133d-43e1-b9b8-7b73ac3327c5";
@@ -462,7 +462,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher2.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "338b764e-b0f1-4969-89c8-164ca308e226";
@@ -476,7 +476,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher2.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "7fe582b8-0308-48d8-8173-800102aebcfb";
@@ -490,7 +490,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher1.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "72daabe6-62ec-4657-8e27-3ef881adcdd0";
@@ -505,7 +505,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher1.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "e09688b3-257e-413f-9ef4-0f4a9916a2c7";
@@ -519,7 +519,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher3.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "339b171d-1256-4569-a330-506e46bb06c6";
@@ -533,7 +533,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher3.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
 
             videoGamesInfoGuidHelper = "a0ed6f38-b3e3-4090-86f1-40c09cdaaecd";
@@ -547,7 +547,7 @@ namespace FusionTech.src.Database
                 TotalRating = 5,
                 PublisherId = Publisher3.PublisherId,
                 GamePicturePath =
-                    $"http://localhost:5125/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
+                    $"https://fusiontech-0dxp.onrender.com/images/Games/{videoGamesInfoGuidHelper}/{videoGamesInfoGuidHelper}.jpg",
             };
             //pc 4, playstation 5
 
@@ -779,14 +779,14 @@ namespace FusionTech.src.Database
             {
                 // InventoryId = Guid.Parse("107fe30c-6d74-4bab-8a1f-26ee0e3cce43"),
                 VideoGameVersionId = VideoGameVersion11.VideoGameVersionId,
-                StoreId = Store2.StoreId,
+                StoreId = Store1.StoreId,
                 GameQuantity = 400,
             };
             var Inventory12 = new Inventory
             {
                 // InventoryId = Guid.Parse("7b15e5ab-e9f0-4e49-bc7b-6d3785f6521c"),
                 VideoGameVersionId = VideoGameVersion12.VideoGameVersionId,
-                StoreId = Store2.StoreId,
+                StoreId = Store1.StoreId,
                 GameQuantity = 350,
             };
 
@@ -794,7 +794,7 @@ namespace FusionTech.src.Database
             {
                 // InventoryId = Guid.Parse("34d82c84-2bb8-4b42-bc62-9ff4bcb7cb88"),
                 VideoGameVersionId = VideoGameVersion13.VideoGameVersionId,
-                StoreId = Store2.StoreId,
+                StoreId = Store1.StoreId,
                 GameQuantity = 250,
             };
 
@@ -802,7 +802,7 @@ namespace FusionTech.src.Database
             {
                 // InventoryId = Guid.Parse("8f204b73-46b8-49c0-9b26-81c3d6d631f3"),
                 VideoGameVersionId = VideoGameVersion14.VideoGameVersionId,
-                StoreId = Store2.StoreId,
+                StoreId = Store1.StoreId,
                 GameQuantity = 600,
             };
 
@@ -810,7 +810,7 @@ namespace FusionTech.src.Database
             {
                 // InventoryId = Guid.Parse("0e2a798e-c4f2-4d2c-a12b-6f5e0f155c7b"),
                 VideoGameVersionId = VideoGameVersion15.VideoGameVersionId,
-                StoreId = Store2.StoreId,
+                StoreId = Store1.StoreId,
                 GameQuantity = 200,
             };
 
@@ -818,7 +818,7 @@ namespace FusionTech.src.Database
             {
                 // InventoryId = Guid.Parse("3b9e4c4e-4b3f-4e7b-9756-d07c1bafe7da"),
                 VideoGameVersionId = VideoGameVersion16.VideoGameVersionId,
-                StoreId = Store2.StoreId,
+                StoreId = Store1.StoreId,
                 GameQuantity = 450,
             };
 
@@ -826,7 +826,7 @@ namespace FusionTech.src.Database
             {
                 // InventoryId = Guid.Parse("f3b1f621-5d81-42f0-b877-78b0a635e32d"),
                 VideoGameVersionId = VideoGameVersion17.VideoGameVersionId,
-                StoreId = Store2.StoreId,
+                StoreId = Store1.StoreId,
                 GameQuantity = 300,
             };
 
@@ -834,7 +834,7 @@ namespace FusionTech.src.Database
             {
                 // InventoryId = Guid.Parse("99c8c29f-7cc0-44ec-bb11-479b27b0b46c"),
                 VideoGameVersionId = VideoGameVersion18.VideoGameVersionId,
-                StoreId = Store2.StoreId,
+                StoreId = Store1.StoreId,
                 GameQuantity = 700,
             };
 
@@ -842,7 +842,7 @@ namespace FusionTech.src.Database
             {
                 // InventoryId = Guid.Parse("5e07b60f-0984-4a83-803c-bda1b735e1c0"),
                 VideoGameVersionId = VideoGameVersion19.VideoGameVersionId,
-                StoreId = Store2.StoreId,
+                StoreId = Store1.StoreId,
                 GameQuantity = 400,
             };
 
@@ -850,7 +850,7 @@ namespace FusionTech.src.Database
             {
                 // InventoryId = Guid.Parse("7f9d9a79-2e29-4c7c-b3f4-87c85fbd7461"),
                 VideoGameVersionId = VideoGameVersion20.VideoGameVersionId,
-                StoreId = Store2.StoreId,
+                StoreId = Store1.StoreId,
                 GameQuantity = 500,
             };
 

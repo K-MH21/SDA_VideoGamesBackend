@@ -79,7 +79,7 @@ namespace FusionTech.src.Controllers
             var orderCount = await _orderService.CountOrdersAsync();
             var orderListDto = new OrderListDto { Orders = orders, TotalCount = orderCount };
 
-            return Ok(orders);
+            return Ok(orderListDto);
         }
     }
 }
