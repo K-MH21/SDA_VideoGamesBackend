@@ -133,7 +133,14 @@ builder.Services.AddCors(options =>
         policy =>
         {
             policy
-                .WithOrigins("http://localhost:3000", "https://gamesland.onrender.com")
+                .WithOrigins(
+                    "http://localhost:3000",
+                    "https://gamesland.onrender.com", // Taghreed
+                    "https://video-game-store-fe.onrender.com", // Razan
+                    "https://vgstore.onrender.com", // Samar
+                    "https://uplevel-z9qs.onrender.com/", // Lujain
+                    "https://k-mh21-frontend.onrender.com/" // Mohmmad
+                )
                 .AllowAnyHeader()
                 .AllowAnyMethod()
                 .SetIsOriginAllowed((host) => true)
@@ -152,13 +159,17 @@ app.UseCors(MyAllowSpecificOrigins);
 app.UseRouting();
 app.MapGet("/", () => "server is running");
 
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "images")), // Correct path
-    RequestPath = "/images" // URL prefix to access images
-});
-
+app.UseStaticFiles(
+    new StaticFileOptions
+    {
+        FileProvider = new PhysicalFileProvider(
+            Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "images")
+        ), // Correct path
+        RequestPath =
+            "/images" // URL prefix to access images
+        ,
+    }
+);
 
 //test if the database is conncted
 using (var scope = app.Services.CreateScope())

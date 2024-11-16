@@ -144,7 +144,7 @@ The application is deployed and can be accessed at :  [https://fusiontech1.onren
 
 ## Team Member :
 - Lead : Mohammed Alhussain [https://github.com/K-MH21]
-- Taghreed Alotaibi [https://github.com/aghreedmn]
+- Taghreed Alotaibi [https://github.com/taghreedmn]
 - Razan Almohammadi [https://github.com/RazanAlmohammadi]
 - Lujain Alshehri [https://github.com/Lujain41]
 - Samar Almutairi [https://github.com/SamarSaad056]

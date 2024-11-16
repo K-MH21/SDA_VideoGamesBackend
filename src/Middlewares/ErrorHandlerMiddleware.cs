@@ -29,6 +29,22 @@ namespace FusionTech.src.Middlewares
                 };
                 await context.Response.WriteAsJsonAsync(response);
             }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = 500;
+                context.Response.ContentType = "application/json";
+                context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
+                context.Response.Headers.Add("Access-Control-Allow-Headers", "*");
+                context.Response.Headers.Add("Access-Control-Allow-Methods", "*");
+
+                var response = new
+                {
+                    StatusCode = 500,
+                    Message = "An internal server error occurred.",
+                    Detail = ex.Message,
+                };
+                await context.Response.WriteAsJsonAsync(response);
+            }
         }
     }
 }
